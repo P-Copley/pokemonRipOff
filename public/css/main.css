@@ -1,0 +1,82 @@
+@font-face {
+  font-family: pokeFont;
+  src: url('/fonts/Pokemon Solid.ttf');
+}
+
+body {
+  font-family: pokeFont;
+  color: #ffcc03;
+  -webkit-text-stroke: 1px #2a75bb;
+  margin: 0;
+  font-size: 28px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  background-color: #c6e4ff;
+  border-bottom: 1px solid #2a75bb;
+  box-shadow: 0 5px 5px -5px #2a75bb;
+  width: 100%;
+}
+
+h1 {
+  animation: bounce-in 1s;
+}
+
+.wandering {
+  animation: walk 10s infinite;
+}
+
+img {
+  animation: waddle 1s infinite;
+}
+
+@keyframes walk {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100px);
+  }
+  66% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes waddle {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(-10deg);
+  }
+  66% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* #ffcc03; */

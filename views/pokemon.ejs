@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href='/css/main.css' type="text/css" rel="stylesheet">
+    <title>Pokemon</title>
+  </head>
+  <body>
+    <header>
+      <h1><%= name %></h1>
+    </header>
+    <div class='wandering'>
+    <img src=<%= sprite %> >
+  </div>
+    <p><%= flavourText %></p>
+    <h2>Types:</h2>
+    <ol>
+      <% types.forEach(type => { %>
+        <li><%= type %></li>
+      <% }) %>
+    </ol>
+    <a href=<%= randomLink %>>Random Pokemon</a>
+  </body>
+</html>
