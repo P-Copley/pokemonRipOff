@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.2",
-    "ava": "^0.16.0",
+    "ava": "^5.1.0",
     "co-exec": "^1.0",
     "codecov": "^1.0.1",
     "ghooks": "^1.2.4",
